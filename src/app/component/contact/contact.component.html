@@ -1,0 +1,31 @@
+<h1>Mon Formulaire</h1>
+<section class="">
+    <div class="container">
+        <form (ngSubmit)="processForm()">
+            <div class="field">
+                <input type="text" 
+                        class="input"
+                        name="name" 
+                        placeholder="Votre nom" 
+                        [(ngModel)]="name"/>
+            </div>
+            <div class="email">
+                <input type="email"
+                        class="input" 
+                        name="email" 
+                        placeholder="Votre email"
+                        [(ngModel)]="email"/>
+            </div>
+            <div class="field">
+                <input type="textarea" 
+                        class="input"
+                        name="message" 
+                        placeholder="Vous avez un message pour moi ?"
+                        [(ngModel)]="message">
+            </div>
+            <button type="submit" 
+                    class="button is-danger is-large">
+                    Envoyer</button>
+        </form>
+    </div>
+</section>
